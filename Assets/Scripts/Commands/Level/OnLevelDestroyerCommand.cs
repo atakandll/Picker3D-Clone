@@ -5,12 +5,12 @@ namespace Commands.Level
     public class OnLevelDestroyerCommand
     {
         private Transform _levelHolder;
-        public OnLevelDestroyerCommand(Transform levelHolder)
+        internal OnLevelDestroyerCommand(Transform levelHolder)
         {
             _levelHolder = levelHolder;
         }
 
-        public void Execute()
+        internal void Execute() // level destroy
         {
             if (_levelHolder.transform.childCount <= 0) return;
             

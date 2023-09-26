@@ -77,14 +77,14 @@ namespace Managers
         private void OnNextLevel()
         {
             _currentLevel++;
-            CoreGameSignals.Instance.onClearActiveLevel?.Invoke(); // mevcut level yokettik.
+            CoreGameSignals.Instance.onClearActiveLevel?.Invoke(); // mevcut leveli temizledik.
             CoreGameSignals.Instance.onReset?.Invoke();
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount)); // yeni level geldi
         }
 
         private void OnRestartLevel()
         {
-            CoreGameSignals.Instance.onClearActiveLevel?.Invoke(); // mevcut level yokettik.
+            CoreGameSignals.Instance.onClearActiveLevel?.Invoke(); // mevcut level temizledik.
             CoreGameSignals.Instance.onReset?.Invoke();
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount)); // yeni level geldi
         }
