@@ -2,6 +2,7 @@
 using Runtime.Commands.Level;
 using Runtime.Data.UnityObjects;
 using Runtime.Data.ValueObjects;
+using Runtime.Enums;
 using Runtime.Signals;
 using UnityEngine;
 
@@ -109,6 +110,8 @@ namespace Runtime.Managers
         {
             //levelId sürekli artıcağından bizim level sayımızı geçmemesi için böyle bir yöntem oluşturuyoruz.
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1);
+
         }
 
         
