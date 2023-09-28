@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Signals
+namespace Runtime.Signals
 {
     public class CoreGameSignals : MonoBehaviour
     {

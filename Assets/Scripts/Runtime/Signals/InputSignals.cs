@@ -1,8 +1,9 @@
-﻿using Keys;
+﻿
+using Runtime.Keys;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Signals
+namespace Runtime.Signals
 {
     public class InputSignals : MonoBehaviour
     {
