@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180d9948-28e7-4ea8-8f69-3599383649ce" name="Changes" comment="" />
+    <list default="true" id="180d9948-28e7-4ea8-8f69-3599383649ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Picker3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Picker3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +99,10 @@
       <workItem from="1695467064197" duration="1033000" />
       <workItem from="1695469257106" duration="298000" />
       <workItem from="1695721424264" duration="4526000" />
+      <workItem from="1695747372832" duration="5841000" />
+      <workItem from="1695760807676" duration="15000" />
+      <workItem from="1695760945112" duration="108000" />
+      <workItem from="1695907324854" duration="1632000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ using Data.UnityObjects;
 using Data.ValueObjects;
 using Keys;
 using Signals;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -18,7 +19,7 @@ namespace Managers
         private bool _isAvailableForTouch, _isFirstTimeTouchTaken, _isTouching;
 
         private float _currentVelocity;
-        private Vector2 _moveVector;
+        private float3 _moveVector;
         private Vector2? _mousePosition;
 
         #endregion
@@ -62,7 +63,7 @@ namespace Managers
         private void OnReset()
         {
             _isAvailableForTouch = false;
-            _isFirstTimeTouchTaken = false;
+            //_isFirstTimeTouchTaken = false;
             _isTouching = false;
         }
         private void UnSubscribeEvent()
@@ -99,7 +100,7 @@ namespace Managers
                 
                 if (!_isFirstTimeTouchTaken)
                 {
-                    _isFirstTimeTouchTaken = true;
+                    _isFirstTimeTouchTaken = true; // bir daha bu döngüye girmemek için
                     InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
                     Debug.LogWarning("Executed -----> OnFirstTimeTouchTaken");
                     
@@ -114,7 +115,7 @@ namespace Managers
                 {
                     if (_mousePosition != null)
                     {
-                        Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value;
+                        Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value; // it calculates the difference in mouse position from the previous frame 
                         
                         if (mouseDeltaPos.x > _data.HorizontalInputSpeed)
                         {
@@ -143,15 +144,22 @@ namespace Managers
             }
         }
 
-        private bool IsPointerOverUIElement()
+        private bool IsPointerOverUIElement() // UI üzerinde mi
         {
-            var eventData = new PointerEventData(EventSystem.current)
+            ///<summary>
+            /// This object is used to store data about a pointer event (like a mouse click or touch).
+            /// It's initialized with the current EventSystem.
+            /// var results = new List<RaycastResult>():
+            /// This line creates a new list called results that will store information about what was hit by a raycast.
+             ///</summary>>
+             
+            var eventData = new PointerEventData(EventSystem.current) // Bu nesne, işaretçi olayı hakkında veri saklar (örneğin fare tıklaması veya dokunmatik).
             {
-                position = Input.mousePosition
+                position = Input.mousePosition // Oluşturulan eventData nesnesinin pozisyonu, mevcut fare pozisyonuna ayarlanır.
             };
-            var results = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(eventData, results);
-            return results.Count > 0;
+            var results = new List<RaycastResult>(); //Bu liste, bir raycast işlemi tarafından vurulan nesneler hakkında bilgi saklar.
+            EventSystem.current.RaycastAll(eventData, results); //vurulan nesnelerin bilgisini results listesine ekler.
+            return results.Count > 0; // Eğer en az bir nesne vurulmuşsa,
         }
     }
 }
