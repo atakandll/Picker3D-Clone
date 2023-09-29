@@ -688,7 +688,7 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1 &620653089
+--- !u!1 &863009618
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -696,8 +696,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 620653090}
-  - component: {fileID: 620653091}
+  - component: {fileID: 863009619}
+  - component: {fileID: 863009620}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -705,13 +705,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &620653090
+--- !u!4 &863009619
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620653089}
+  m_GameObject: {fileID: 863009618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -720,13 +720,13 @@ Transform:
   m_Father: {fileID: 1073412796}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &620653091
+--- !u!114 &863009620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620653089}
+  m_GameObject: {fileID: 863009618}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad163b36999947999171530c5ac15ca8, type: 3}
@@ -768,7 +768,7 @@ Transform:
   - {fileID: 99666954}
   - {fileID: 1384647452}
   - {fileID: 1936130448}
-  - {fileID: 620653090}
+  - {fileID: 863009619}
   - {fileID: 423234415}
   m_Father: {fileID: 0}
   m_RootOrder: 2

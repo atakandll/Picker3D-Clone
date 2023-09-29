@@ -33,5 +33,8 @@ namespace Runtime.Signals
         public UnityAction onReset = delegate{  };
         
         public Func<byte> onGetLevelValue = delegate { return 0; }; // değer döndüren(func olarak yazılır) parametre de alıyor func
+        public UnityAction onStageAreaEntered = delegate{  };
+        public UnityAction<byte> onStageAreaSuccesful = delegate{  };
+        public UnityAction onFinishAreaEntered = delegate{  };
     }
 }
