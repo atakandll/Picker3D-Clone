@@ -12,6 +12,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Enums/UIEventSubscriptionTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Handlers/UIEventSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,7 +52,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity 2022.1.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Picker3D -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Picker3D" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -56,7 +60,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity 2022.1.23f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Picker3D -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Picker3D" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -102,6 +106,9 @@
       <workItem from="1695760807676" duration="15000" />
       <workItem from="1695760945112" duration="108000" />
       <workItem from="1695907324854" duration="5579000" />
+      <workItem from="1695930833022" duration="7052000" />
+      <workItem from="1696005218863" duration="1011000" />
+      <workItem from="1696006542772" duration="203000" />
     </task>
     <servers />
   </component>
