@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180d9948-28e7-4ea8-8f69-3599383649ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Picker3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Picker3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Controllers/Player/PlayerMeshController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Controllers/Player/PlayerMeshController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="180d9948-28e7-4ea8-8f69-3599383649ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +111,7 @@
       <workItem from="1696020499358" duration="4949000" />
       <workItem from="1696033745620" duration="1395000" />
       <workItem from="1696119784902" duration="3075000" />
+      <workItem from="1696227965305" duration="4686000" />
     </task>
     <servers />
   </component>

@@ -58,7 +58,8 @@ namespace Runtime.Managers
         {
             UISignals.Instance.onPlay?.Invoke();
             CoreUISignals.Instance.onClosePanel?.Invoke(1); // startı kapattık
-            InputSignals.Instance.onEnableInput ?.Invoke(); // artık input alabiliriz
+            InputSignals.Instance.onEnableInput?.Invoke(); // artık input alabiliriz
+            CameraSignals.Instance.onSetCameraTarget?.Invoke();
             
         }
 

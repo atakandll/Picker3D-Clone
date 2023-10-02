@@ -1,28 +1,12 @@
 ﻿using System;
+using Runtime.Extensions;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Runtime.Signals
 {
-    public class CoreGameSignals : MonoBehaviour
+    public class CoreGameSignals : MonoSingleton<CoreGameSignals>
     {
-        #region Singleton
-
-        public static CoreGameSignals Instance;
-        
-
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
-
-        #endregion
-        
         public UnityAction<byte> onLevelInitialize = delegate{  }; // action olanlar void ve parametre almayan demek, başlangıçta hiçbirşey yapmayan bir delegate e eşitledik.
         public UnityAction onClearActiveLevel = delegate{  };
         public UnityAction onLevelSuccesful = delegate{  };
