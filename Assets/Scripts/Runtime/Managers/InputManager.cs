@@ -123,7 +123,7 @@ namespace Runtime.Managers
                         }
                         else if (mouseDeltaPos.x < _data.HorizontalInputSpeed)
                         {
-                            _moveVector.x = -_data.HorizontalInputSpeed / 10f * mouseDeltaPos.x;
+                            _moveVector.x = -_data.HorizontalInputSpeed / 10f * -mouseDeltaPos.x;
                         }
                         else // hissiyat için yaptık, yavaş yavaş 0 olucak.
                         {

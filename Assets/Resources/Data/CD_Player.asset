@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data:
     MovementData:
-      ForwardSpeed: 5
-      SidewaySpeed: 3
+      ForwardSpeed: 7
+      SidewaySpeed: 6
     MeshData:
       ScaleCounter: 1.2
     ForceData:
       ForceParametres:
         x: 0
-        y: 4
-        z: 10
+        y: 4.65
+        z: 0.15
