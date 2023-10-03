@@ -71,7 +71,7 @@ namespace Runtime.Managers
         }
         public byte OnGetLevelValue()
         {
-            return (byte)_currentLevel;
+            return (byte)(_currentLevel % totalLevelCount);
 
         }
         private void OnNextLevel()

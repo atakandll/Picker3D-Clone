@@ -18,6 +18,13 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccesful += OnLevelSuccesful;
             CoreGameSignals.Instance.onLevelFailed += OnLevelFailed;
             CoreGameSignals.Instance.onReset += OnReset;
+            
+
+        }
+
+        private void OnStageAreaSuccesful(byte stageValue)
+        {
+            UISignals.Instance.onSetStageColor?.Invoke(stageValue);
         }
 
         private void OnLevelFailed()
@@ -48,6 +55,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccesful -= OnLevelSuccesful;
             CoreGameSignals.Instance.onLevelFailed -= OnLevelFailed;
             CoreGameSignals.Instance.onReset -= OnReset;
+            CoreGameSignals.Instance.onStageAreaSuccesful -= OnStageAreaSuccesful;
         }
 
         private void OnDisable()

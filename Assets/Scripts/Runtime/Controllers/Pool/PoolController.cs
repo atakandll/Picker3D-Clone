@@ -5,6 +5,7 @@ using Runtime.Data.UnityObjects;
 using Runtime.Data.ValueObjects;
 using Runtime.Signals;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Runtime.Controllers.Pool
@@ -19,6 +20,7 @@ namespace Runtime.Controllers.Pool
         [SerializeField] private TextMeshPro poolText;
         [SerializeField] private byte stageID;
         [SerializeField] private new Renderer renderer;
+        [SerializeField] private float3 poolAfterColor = new float3(0.1607843f, 0.3144797f, 0.6039216f);
 
         #endregion
 
@@ -54,8 +56,9 @@ namespace Runtime.Controllers.Pool
             CoreGameSignals.Instance.onStageAreaSuccesful += OnActiveTweens;
             CoreGameSignals.Instance.onStageAreaSuccesful += OnChangePoolColor;
         }
+        
 
-        private void OnChangePoolColor(byte stageValue)
+        private void OnActiveTweens(byte stageValue)
         {
             if(stageValue != stageID) return;
             
@@ -63,13 +66,12 @@ namespace Runtime.Controllers.Pool
             {
                 tween.DOPlay();
             }
-            
-        }
 
-        private void OnActiveTweens(byte stageValue)
+        }
+        private void OnChangePoolColor(byte stageValue)
         {
             if(stageValue != stageID) return;
-            renderer.material.DOColor(new Color(0, 1607842f, 0.6039216f, 0.1766218f), 1).SetEase(Ease.Linear);
+            renderer.material.DOColor(new Color(poolAfterColor.x, poolAfterColor.y,poolAfterColor.z), .5f).SetEase(Ease.Flash).SetRelative(false);
 
         }
 

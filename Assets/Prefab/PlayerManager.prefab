@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 205884046871737276}
   - component: {fileID: 205884046871737277}
   - component: {fileID: 205884046871737266}
-  - component: {fileID: 7779679167740358698}
+  - component: {fileID: 4963877623947773129}
   m_Layer: 0
   m_Name: Physics
   m_TagString: Player
@@ -63,7 +63,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &7779679167740358698
+--- !u!114 &4963877623947773129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   StageValue: 0
   movementController: {fileID: 6991738480824678608}
   meshController: {fileID: 6109665651792913507}
-  physicsController: {fileID: 0}
+  physicsController: {fileID: 4963877623947773129}
 --- !u!114 &6991738480824678608
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Enums/UIEventSubscriptionTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Handlers/UIEventSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -113,6 +115,7 @@
       <workItem from="1696119784902" duration="3075000" />
       <workItem from="1696227965305" duration="4686000" />
       <workItem from="1696270610316" duration="4093000" />
+      <workItem from="1696316697733" duration="6218000" />
     </task>
     <servers />
   </component>

@@ -30,7 +30,7 @@ namespace Runtime.Controllers.Player
             _data = data;
         }
 
-        internal void ScaleUpData()
+        internal void ScaleUpPlayer()
         {
             renderer.gameObject.transform.DOScale(_data.ScaleCounter, 0.5f).SetEase(Ease.Flash);
         }

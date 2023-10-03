@@ -2599,7 +2599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4027520978237220144}
   - component: {fileID: 6296851271180745564}
-  - component: {fileID: 8257622864341253050}
+  - component: {fileID: 4438931028329826006}
   m_Layer: 0
   m_Name: Physics
   m_TagString: PoolArea
@@ -2635,7 +2635,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.5085816, z: 1}
   m_Center: {x: 0, y: 0.7542908, z: 0}
---- !u!114 &8257622864341253050
+--- !u!114 &4438931028329826006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2644,20 +2644,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5864076620977841907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5515aade753424d820bbc46be2b7526, type: 3}
+  m_Script: {fileID: 11500000, guid: 016d8250f803452c94f9192b884322ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tweens:
-  - {fileID: 9184225053601131155}
-  - {fileID: 4412717554545556511}
   - {fileID: 2519405734463406150}
+  - {fileID: 4412717554545556511}
+  - {fileID: 9184225053601131155}
   poolText: {fileID: 1819977566778375030}
   stageID: 0
   renderer: {fileID: 9184225053601131157}
-  poolAfterColor:
-    x: 0.2078432
-    y: 0.3058824
-    z: 0.5294118
+  poolAfterColor: {r: 0, g: 0.2392157, b: 0.61960787, a: 1}
 --- !u!1 &5942088677032628728
 GameObject:
   m_ObjectHideFlags: 0
