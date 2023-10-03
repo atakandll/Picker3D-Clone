@@ -1,4 +1,6 @@
 ﻿using System;
+using DG.Tweening;
+using Runtime.Controllers.Pool;
 using Runtime.Managers;
 using Runtime.Signals;
 using UnityEngine;
@@ -34,8 +36,25 @@ namespace Runtime.Controllers.Player
                 manager.ForceCommand.Execute(); 
                 CoreGameSignals.Instance.onStageAreaEntered?.Invoke();
                 InputSignals.Instance.onDisableInput?.Invoke(); // karakter artık hareket etmeyecek
-                
-                //Stage area control süreci
+
+                DOVirtual.DelayedCall(3, () =>
+                {
+                    var result = other.transform.parent.GetComponentInChildren<PoolController>()
+                        .TakeResult(manager.StageValue);
+
+                    if (result) // başarılı olma durumu
+                    {
+                        CoreGameSignals.Instance.onStageAreaSuccesful?.Invoke(manager.StageValue);
+                        InputSignals.Instance.onEnableInput?.Invoke();
+                    }
+                    else // başarısız olma durumu
+                    {
+                        CoreGameSignals.Instance.onLevelFailed?.Invoke();
+                    }
+                    
+                });
+                return;
+
             }
 
             if (other.CompareTag(_finish))
@@ -50,6 +69,15 @@ namespace Runtime.Controllers.Player
             {
                 //write the mini game
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            var transform1 = manager.transform;
+            var position1 = transform1.position;
+            
+            Gizmos.DrawSphere(new Vector3(position1.x, position1.y + 1f, position1.z + 1f), 1.35f);
         }
 
         public void OnReset()
