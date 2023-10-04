@@ -2648,13 +2648,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweens:
-  - {fileID: 2519405734463406150}
-  - {fileID: 4412717554545556511}
   - {fileID: 9184225053601131155}
+  - {fileID: 4412717554545556511}
+  - {fileID: 2519405734463406150}
   poolText: {fileID: 1819977566778375030}
   stageID: 0
   renderer: {fileID: 9184225053601131157}
-  poolAfterColor: {r: 0, g: 0.2392157, b: 0.61960787, a: 1}
+  poolAfterColor:
+    x: 0.1607843
+    y: 0.3144797
+    z: 0.6039216
 --- !u!1 &5942088677032628728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,7 +4327,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7891812915974826912}
   m_LocalRotation: {x: 0.7071065, y: -0, z: -0, w: 0.7071072}
-  m_LocalPosition: {x: 0, y: 0, z: 100.5644}
+  m_LocalPosition: {x: 0, y: 0, z: 102.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

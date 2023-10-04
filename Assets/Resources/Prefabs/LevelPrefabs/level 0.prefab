@@ -1207,14 +1207,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4963877623947773129, guid: d8d1486d42506da41a32ac8b04d22d05,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1669480559639984145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8d1486d42506da41a32ac8b04d22d05, type: 3}
+--- !u!114 &1669480559639984145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1127556640050418211, guid: d8d1486d42506da41a32ac8b04d22d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769577597518506546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897632825910661911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea59e0553974d76a605304e286e3f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1897632825910661906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 205884047297280288, guid: d8d1486d42506da41a32ac8b04d22d05,
     type: 3}
   m_PrefabInstance: {fileID: 1769577597518506546}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1897632825910661911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 205884047297280293, guid: d8d1486d42506da41a32ac8b04d22d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769577597518506546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7138767875883882817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897632825910661911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea59e0553974d76a605304e286e3f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageValue: 0
+  movementController: {fileID: 0}
+  meshController: {fileID: 0}
+  physicsController: {fileID: 0}
 --- !u!1001 &3110241213627601674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1465,6 +1504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184225053601131155, guid: 4598c25495f09e44d8146c1c2b5051db,
+        type: 3}
+      propertyPath: autoKill
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4813441044872233773, guid: 4598c25495f09e44d8146c1c2b5051db, type: 3}

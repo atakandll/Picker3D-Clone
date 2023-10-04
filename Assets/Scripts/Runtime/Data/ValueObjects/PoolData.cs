@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 
 namespace Runtime.Data.ValueObjects
@@ -9,4 +9,3 @@ namespace Runtime.Data.ValueObjects
         public byte RequiredObjectCount;
     }
 }
-

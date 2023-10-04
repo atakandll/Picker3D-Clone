@@ -34,7 +34,7 @@ namespace Runtime.Controllers.UI
         {
             foreach (var layer in layers)
             {
-                if(layer.childCount <= 0) return;
+                if (layer.childCount <= 0) return;
 #if UNITY_EDITOR
                 DestroyImmediate(layer.GetChild(0).gameObject);
 #else
@@ -52,10 +52,11 @@ namespace Runtime.Controllers.UI
         private void OnClosePanel(int value)
         {
             if (layers[value].childCount <= 0) return;
+
 #if UNITY_EDITOR
             DestroyImmediate(layers[value].GetChild(0).gameObject);
 #else
-                Destroy(layers[value].GetChild(0).gameObject);
+            Destroy(layers[value].GetChild(0).gameObject);
 #endif
         }
         private void UnSubscribeEvent()

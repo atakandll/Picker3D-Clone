@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30f5fba59444e9d823004abe9df97ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 4074185873808674069}
+  manager: {fileID: 0}
   rigidbody: {fileID: 205884046871737266}
   collider: {fileID: 205884046871737277}
 --- !u!1 &205884047143833462
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 205884047297280288}
-  - component: {fileID: 4074185873808674069}
+  - component: {fileID: 1127556640050418211}
   - component: {fileID: 6991738480824678608}
   - component: {fileID: 205884047297280295}
   m_Layer: 0
@@ -165,7 +165,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4074185873808674069
+--- !u!114 &1127556640050418211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

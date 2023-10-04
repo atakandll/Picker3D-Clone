@@ -40,7 +40,7 @@ namespace Runtime.Controllers.Player
                 DOVirtual.DelayedCall(3, () =>
                 {
                     var result = other.transform.parent.GetComponentInChildren<PoolController>()
-                        .TakeResult(manager.StageValue);
+                        .TakeResults(manager.StageValue);
 
                     if (result) // başarılı olma durumu
                     {
@@ -61,7 +61,6 @@ namespace Runtime.Controllers.Player
             {
                 CoreGameSignals.Instance.onFinishAreaEntered?.Invoke();
                 InputSignals.Instance.onDisableInput?.Invoke();
-                CoreGameSignals.Instance.onLevelSuccesful?.Invoke();
                 return;
             }
 

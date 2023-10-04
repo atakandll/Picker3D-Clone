@@ -47,16 +47,15 @@ namespace Runtime.Managers
         }
         
 
+        private PlayerData GetPlayerData()
+        {
+            return Resources.Load<CD_Player>("Data/CD_Player").Data;
+        }
         private void SendDataToControllers()
         {
             movementController.SetData(_data.MovementData);
             meshController.SetData(_data.MeshData);
             
-        }
-
-        private PlayerData GetPlayerData()
-        {
-            return Resources.Load<CD_Player>("Data/CD_Player").Data;
         }
         
         private void Init()
