@@ -1371,6 +1371,10 @@ MonoBehaviour:
   poolText: {fileID: 7726011210711800204}
   stageID: 0
   renderer: {fileID: 940541702317000815}
+  poolAfterColor:
+    x: 0.1607843
+    y: 0.3144797
+    z: 0.6039216
 --- !u!4 &9138967122381571207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6196365719874738061, guid: 4598c25495f09e44d8146c1c2b5051db,
@@ -1533,6 +1537,10 @@ MonoBehaviour:
   poolText: {fileID: 7726011210711800204}
   stageID: 0
   renderer: {fileID: 940541702317000815}
+  poolAfterColor:
+    x: 0.1607843
+    y: 0.3144797
+    z: 0.6039216
 --- !u!1001 &8248788807297049338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1921,6 +1929,10 @@ MonoBehaviour:
   poolText: {fileID: 7726011210711800204}
   stageID: 0
   renderer: {fileID: 940541702317000815}
+  poolAfterColor:
+    x: 0.1607843
+    y: 0.3144797
+    z: 0.6039216
 --- !u!114 &5711842557604519653 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4412717554545556511, guid: 4598c25495f09e44d8146c1c2b5051db,

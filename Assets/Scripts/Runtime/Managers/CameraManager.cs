@@ -55,7 +55,7 @@ namespace Runtime.Managers
         {
            var player = FindObjectOfType<PlayerManager>().transform;
            virtualCamera.Follow = player;
-           virtualCamera.LookAt = player;
+           
         }
 
 
