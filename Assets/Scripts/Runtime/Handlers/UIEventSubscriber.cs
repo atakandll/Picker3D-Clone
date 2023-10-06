@@ -54,8 +54,7 @@ namespace Runtime.Handlers
                 case UIEventSubscriptionTypes.OnRestartLevel:
                     button.onClick.AddListener(_manager.RestartLevel);
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                
             }
             
         }
@@ -73,8 +72,7 @@ namespace Runtime.Handlers
                 case UIEventSubscriptionTypes.OnRestartLevel:
                     button.onClick.RemoveListener(_manager.RestartLevel);
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+               
             }
             
         }

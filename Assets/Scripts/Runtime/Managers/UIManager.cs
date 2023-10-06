@@ -34,10 +34,10 @@ namespace Runtime.Managers
         {
             UnSubscribeEvent();
         }
-        private void OnLevelInitialize(byte arg0)
+        private void OnLevelInitialize(byte levelValue)
         {
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Level, 0); // levelin layerı 0 olarak atadık en arkada level ekranı gozukucek
-            UISignals.Instance.onSetLevelValue?.Invoke((byte)CoreGameSignals.Instance.onGetLevelValue?.Invoke());
+            UISignals.Instance.onSetLevelValue?.Invoke(levelValue);
             
         }
         private void OnLevelSuccesful()
@@ -56,6 +56,7 @@ namespace Runtime.Managers
         public void RestartLevel()
         {
             CoreGameSignals.Instance.onRestartLevel?.Invoke();
+            CoreGameSignals.Instance.onReset?.Invoke();
         }
         public void Play()
         {

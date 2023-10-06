@@ -13,6 +13,7 @@ namespace Runtime.Signals
         
         public UnityAction onNextLevel = delegate{  };
         public UnityAction onRestartLevel = delegate{  };
+        public UnityAction onPlay = delegate { };
         public UnityAction onReset = delegate{  };
         
         public Func<byte> onGetLevelValue = delegate { return 0; }; // değer döndüren(func olarak yazılır) parametre de alıyor func

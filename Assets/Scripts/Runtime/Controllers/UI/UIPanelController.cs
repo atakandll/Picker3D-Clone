@@ -20,16 +20,16 @@ namespace Runtime.Controllers.UI
 
         private void OnEnable()
         {
-            SubscribeEvent();
+            SubscribeEvents();
         }
 
-        private void SubscribeEvent()
+        private void SubscribeEvents()
         {
             CoreUISignals.Instance.onClosePanel += OnClosePanel;
             CoreUISignals.Instance.onOpenPanel += OnOpenPanel;
             CoreUISignals.Instance.onCloseAllPanels += OnCloseAllPanels;
         }
-
+        
         private void OnCloseAllPanels()
         {
             foreach (var layer in layers)
@@ -42,13 +42,13 @@ namespace Runtime.Controllers.UI
 #endif
             }
         }
-
+        
         private void OnOpenPanel(UIPanelTypes panelType, int value)
         {
             OnClosePanel(value);
             Instantiate(Resources.Load<GameObject>($"Screens/{panelType}Panel"), layers[value]);
         }
-
+        
         private void OnClosePanel(int value)
         {
             if (layers[value].childCount <= 0) return;
@@ -56,10 +56,11 @@ namespace Runtime.Controllers.UI
 #if UNITY_EDITOR
             DestroyImmediate(layers[value].GetChild(0).gameObject);
 #else
-            Destroy(layers[value].GetChild(0).gameObject);
+                Destroy(layers[value].GetChild(0).gameObject);
 #endif
         }
-        private void UnSubscribeEvent()
+
+        private void UnSubscribeEvents()
         {
             CoreUISignals.Instance.onClosePanel -= OnClosePanel;
             CoreUISignals.Instance.onOpenPanel -= OnOpenPanel;
@@ -68,7 +69,7 @@ namespace Runtime.Controllers.UI
 
         private void OnDisable()
         {
-            UnSubscribeEvent();
+            UnSubscribeEvents();
         }
     }
 }

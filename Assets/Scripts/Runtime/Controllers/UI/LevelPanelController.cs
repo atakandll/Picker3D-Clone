@@ -28,10 +28,14 @@ namespace Runtime.Controllers.UI
 
         private void SubscribeEvent()
         {
-            UISignals.Instance.onSetStageColor += OnSetStageColor;
             UISignals.Instance.onSetLevelValue += OnSetLevelValue;
+            UISignals.Instance.onSetStageColor += OnSetStageColor;
         }
 
+        private void OnSetStageColor(byte stageValue)
+        {
+            stageImages[stageValue].DOColor(new Color(0.9960785f,0.4196079f,0.07843138f), 0.5f);
+        }
         private void OnSetLevelValue(byte levelValue)
         {
             var additionalValue = ++levelValue; // 1 yazması için
@@ -43,20 +47,16 @@ namespace Runtime.Controllers.UI
             levelTexts[1].text = additionalValue.ToString();
         }
 
-        private void OnSetStageColor(byte stageValue)
-        {
-            stageImages[stageValue].DOColor(new Color(0.9960785f,0.4196079f,0.07843138f), 0.5f);
-        }
-
-        private void OnDisable()
-        {
-            UnSubscribeEvent();
-        }
 
         private void UnSubscribeEvent()
         {
             UISignals.Instance.onSetStageColor -= OnSetStageColor;
             UISignals.Instance.onSetLevelValue -= OnSetLevelValue;
         }
+        private void OnDisable()
+        {
+            UnSubscribeEvent();
+        }
+
     }
 }

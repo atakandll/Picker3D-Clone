@@ -45,12 +45,6 @@ namespace Runtime.Managers
             CameraSignals.Instance.onSetCameraTarget += OnSetCameraTarget;
             CoreGameSignals.Instance.onReset += OnReset;
         }
-
-        private void OnReset()
-        {
-            transform.position = _firstPosition;
-        }
-
         private void OnSetCameraTarget()
         {
            var player = FindObjectOfType<PlayerManager>().transform;
@@ -58,6 +52,10 @@ namespace Runtime.Managers
            
         }
 
+        private void OnReset()
+        {
+            transform.position = _firstPosition;
+        }
 
         private void UnSubscribeEvent()
         {

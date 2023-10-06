@@ -19,7 +19,7 @@ MonoBehaviour:
     MeshData:
       ScaleCounter: 1.2
     ForceData:
-      ForceParametres:
+      ForceParameters:
         x: 0
-        y: 8
-        z: 2.4
+        y: 2
+        z: 1

@@ -1,5 +1,6 @@
 ﻿using System;
 using Unity.Mathematics;
+using UnityEngine.Serialization;
 
 namespace Runtime.Data.ValueObjects
 {
@@ -28,6 +29,6 @@ namespace Runtime.Data.ValueObjects
     [Serializable]
     public struct PlayerForceData
     {
-        public float3 ForceParametres;
+        [FormerlySerializedAs("ForceParametres")] public float3 ForceParameters;
     }
 }
