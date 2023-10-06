@@ -18,6 +18,8 @@ Watch the `gameplay` of the Picker3D Clone: https://www.youtube.com/watch?v=XUwn
 
 ## Gameplay 
 ![ezgif com-video-to-gif](https://github.com/atakandll/Picker3D-Clone/assets/130579265/53da13e6-d75a-45fe-b717-91560a593d7e)
+![ezgif com-video-to-gif (3)](https://github.com/atakandll/Picker3D-Clone/assets/130579265/17070afc-dd83-40ce-badf-63b47c164cc9)
+
 
 ## Unity Version
 2021.3.22f1
