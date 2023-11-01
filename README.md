@@ -1,7 +1,7 @@
 # Picker3D Clone
 Throughout the development of this project, I have learned following best coding practices and design principles to ensure maintainability, scalability and efficiency.
 
-This project is a clone of Picker3D  game you can acces to the original game from these link.
+This project is a clone of Picker3D  game you can acces to the original game from this link.
 
 App store: https://apps.apple.com/us/app/picker-3d/id1462317543
 
